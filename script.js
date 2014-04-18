@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // assigning the object
         $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
              
             // Put together our final background position
             var coords = '50% '+ yPos + 'px';
@@ -129,9 +129,9 @@ $(window).bind('scroll',function(e){
  
 function scrollSpeed(){
     var scrolled = $(window).scrollTop();
-    $('#headline').css('top',(headline_top-(scrolled*-2))+'px');
-    $('#sectionLevels').css('top',(0-(scrolled*2))+'px');
-    $('#sectionHome').css('top',(0-(scrolled*2))+'px');
+    //$('#headline').css('top',(headline_top-(scrolled*-2))+'px');
+    //$('#sectionLevels').css('top',(0-(scrolled*2))+'px');
+    //$('#sectionHome').css('top',(0-(scrolled*2))+'px');
 }
 
 // Auto Scroll
