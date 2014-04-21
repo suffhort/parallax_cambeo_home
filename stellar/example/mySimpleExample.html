@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head></head>
+<style>
+.pixel {
+  position: relative;
+  display: inline-block;
+  top:750px;
+  width: 20px;
+  height: 40px;
+  border-radius: 35px;
+  background: white;
+  background-repeat: no-repeat;
+  box-shadow: 3px 15px 8px 10px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+.buttback {
+background: radial-gradient(ellipse at center,  rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.mobile body {
+  overflow: hidden;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile #scroller {
+  height: 1550px;
+}
+
+
+.pookie {
+  width:1000px;
+  height:1000px;
+  border: 2px solid blue;
+}
+
+section {
+  position: relative;
+  top: 350px;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  border: 2px solid red;
+}
+
+
+</style>
+
+<body>
+    <div id="wrapper">
+      <div id="scroller">
+          <section>
+<div class="pixel buttback" data-stellar-ratio="1.1" data-stellar-background-ratio="0.5" ></div>
+  <div class="pixel buttback" data-stellar-ratio="1.2" data-stellar-background-ratio="0.3" ></div>
+  <div class="pookie">smartass</div></section>
+  </div></div>
+      <script src="jquery.min.js"></script>
+    <script src="jquery.stellar.min.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="script.js"></script>
+
+</body>

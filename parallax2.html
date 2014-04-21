@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,400,900,100italic,400italic' rel='stylesheet' type='text/css'>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.stellar.min.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="script.js"></script>
+</head>
+<style type="text/css">
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#top_menu {
+  background:#333;
+  top:0px;
+  height:35px;
+  width: 100%;
+  z-index:10;
+  position:fixed;
+  text-align:center;
+  padding-top:20px;
+}
+.link-spanner{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+#bubble { 
+  float: right;
+  top:35px;
+  left:80px;
+  font-family: 'Lato', sans-serif;
+  color:#FFF;
+  font-size:18px;
+  font-weight:300;
+  letter-spacing:1px; 
+  position: relative;
+  width: 270px;
+  height: 21px;
+  padding: 12px;
+  background: #3daeb6;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+#bubble:after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 204px;
+  border-style: solid;
+  border-width: 0 11px 13px;
+  border-color: #3daeb6 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+a, a:active, a:visited { 
+  font-family: 'Lato', sans-serif;
+  font-size:12px;
+    font-weight:400;
+    color:#edf2ee;
+  text-decoration:none;
+}
+
+
+a:hover { color: #3daeb6; }
+
+#sectionHome { 
+  background: url(Cambeo-Website-BG1.png) 50% no-repeat; 
+  min-height: 700px; 
+  height: 700px; 
+  margin: 0 auto;
+  width: 100%; 
+  /*max-width: 1920px; */
+  position: relative; 
+  z-index:0;
+}
+ 
+#headline { 
+  background: url(dark_blue_back.png);
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(27,84,102,1) 35%,rgba(27,84,102,1) 65%,rgba(255,255,255,1) 100%);
+  background-repeat: repeat-y;
+  height: 185px; 
+  padding-top:50px;
+  position: relative; 
+  text-align: center; 
+  top: 270px; 
+  width: auto;
+  margin: 0 auto; 
+  font-family: 'Lato', sans-serif;
+  font-size:80px;
+  font-weight:300;
+  line-height:45px;
+  color:#FFF;
+  z-index:1;
+  opacity:.85;
+}
+
+.subline {
+  font-family: 'Lato', sans-serif;
+  font-size:34px;
+  font-weight:300;
+  line-height:28px;
+  color:#FFF;
+  text-align: center;
+}
+
+
+</style>
+<body>
+  <div id="wrapper">
+    <div id="scroller">
+      <div id="top_menu" >
+        <div id="logo"></div> 
+        <div id="logoSmall">
+          <a href="" class="logo button"><span class="link-spanner"></span></a>
+        </div>
+        <a href="" class="menu link" style="float:right; margin-right:40px;">LOGIN</a>
+        <div id="bubble">CAMBEO PRO LOGIN HERE</div>
+      </div>
+      <section data-stellar-ratio="1" data-stellar-background-ratio="1.5" id="sectionHome" style="top: 75px; background-position-y: 0px;">
+        <article data-stellar-background-ratio=".11" id="headline">STOP CHASING RESULTS</br>
+        <font class="subline">AND BEGIN DRIVING THE ACTIONS THAT LEAD TO THEM</font></br>
+        <a href="#Graphic" id="getButton">GET A DEMO</a></div>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
