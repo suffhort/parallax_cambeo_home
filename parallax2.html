@@ -88,27 +88,18 @@ a, a:active, a:visited {
 a:hover { color: #3daeb6; }
 
 #sectionHome { 
-  background: url(Cambeo-Website-BG1.png) 50% no-repeat; 
-  min-height: 700px; 
-  height: 700px; 
-  margin: 0 auto;
-  width: 100%; 
-  /*max-width: 1920px; */
-  position: relative; 
-  z-index:0;
+  background: url(Cambeo-Website-BG1.png) 50% no-repeat;
+  min-height: 666px; 
 }
  
-#headline { 
-  background: url(dark_blue_back.png);
+#sectionHome article { 
+  /*background: url(dark_blue_back.png);*/
   background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(27,84,102,1) 35%,rgba(27,84,102,1) 65%,rgba(255,255,255,1) 100%);
-  background-repeat: repeat-y;
   height: 185px; 
   padding-top:50px;
-  position: relative; 
+  position: absolute;
   text-align: center; 
   top: 270px; 
-  width: auto;
-  margin: 0 auto; 
   font-family: 'Lato', sans-serif;
   font-size:80px;
   font-weight:300;
@@ -116,22 +107,105 @@ a:hover { color: #3daeb6; }
   color:#FFF;
   z-index:1;
   opacity:.85;
+  width: 100%;
+}
+
+#headline { 
+  font-size:60px;
+  font-weight:300;
+  line-height:45px;
 }
 
 .subline {
   font-family: 'Lato', sans-serif;
-  font-size:34px;
+  font-size:28px;
   font-weight:300;
   line-height:28px;
   color:#FFF;
   text-align: center;
 }
 
+a:hover {
+color: #3daeb6;
+
+}
+#sectionLevels{ 
+  background: url(statGraphic.png) 50% no-repeat;
+  min-height: 800px;
+}
+ 
+#sectionLevels article {  
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(27,84,102,1) 35%,rgba(27,84,102,1) 65%,rgba(255,255,255,1) 100%);
+  position: absolute; 
+  text-align: center; 
+  top: 40px; 
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size:36px;
+  color:#FFF;
+  z-index:1;
+  opacity:.85;
+  height:505px;
+  width: 100%;
+}
+
+
+#sectionLevels table{
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size:18px;
+  text-align:center;
+  left: 0; right:0;top: 110;
+  margin: 0 auto;
+/*  margin-top:20px;  
+  margin-left:10%;
+  margin-right:10%;
+*/  color:#FFF; 
+  border-collapse: collapse;
+  line-height:26px;
+ 
+}
+
+#sectionLevels th {
+  border-top:none;
+  border-bottom:dotted 1px;
+  text-align:center;
+  color: white; 
+  letter-spacing:3px;
+  font-weight: 400; 
+  font-size:22px;
+}
+#sectionLevels td, th { 
+  padding: 10px 12px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  border-bottom:none;
+  border-top:none;
+}
+
+.bannerInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile #scroller {
+  height: 1700px;
+}
 
 </style>
 <body>
+  <!--div data-stellar-ratio="1" data-stellar-background-ratio="1.5" data-stellar-vertical-offset="0" data-stellar-horizontal-offset="0" </div-->
   <div id="wrapper">
     <div id="scroller">
+
       <div id="top_menu" >
         <div id="logo"></div> 
         <div id="logoSmall">
@@ -140,12 +214,57 @@ a:hover { color: #3daeb6; }
         <a href="" class="menu link" style="float:right; margin-right:40px;">LOGIN</a>
         <div id="bubble">CAMBEO PRO LOGIN HERE</div>
       </div>
-      <section data-stellar-ratio="1" data-stellar-background-ratio="1.5" id="sectionHome" style="top: 75px; background-position-y: 0px;">
-        <article data-stellar-background-ratio=".11" id="headline">STOP CHASING RESULTS</br>
-        <font class="subline">AND BEGIN DRIVING THE ACTIONS THAT LEAD TO THEM</font></br>
-        <a href="#Graphic" id="getButton">GET A DEMO</a></div>
+  
+      <section id="sectionHome" style="top: 75px; background-position-y: 0px;">
+        <article data-stellar-vertical-offset="-100" data-stellar-ratio="2">
+        <div class="bannerInner">
+          <span id="headline">STOP CHASING RESULTS</span></br>
+          <font class="subline">AND BEGIN DRIVING THE ACTIONS THAT LEAD TO THEM</font></br>
+          <a href="#Graphic" id="getButton">GET A DEMO</a>
+        </div>
         </article>
       </section>
+  
+      <section id="sectionLevels" data-speed="4"  data-type="background">
+        <article data-stellar-vertical-offset="-1200" data-stellar-ratio="2"></br>
+          <div class="bannerInner">IMPROVE PERFORMANCE AT EVERY LEVEL 
+          <table>
+            <thead>
+            <tr>
+                <th>EXECUTIVE</th>
+                <th>MANAGER</th>
+                <th>STAFF</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Get dashboard visibility on the effectiveness of all stores</td>
+                <td>Create and distribute store and staff assessments in minutes</td>
+                <td>Send anonylous feedback to managers and executives</td>
+            </tr>
+            <tr>
+                <td>Track performance indicators of the entire staff</td>
+                <td>Streamline daily checklists and monthly audits</td>
+                <td>Communicate critical standards of outstanding performance</td>
+            </tr>
+            <tr>
+                <td>Track implementation of company training among staff</td>
+                <td>Boost staff training with engaging videos and ready-to-go guides</td>
+                <td>Improve skills with video training proven to drive results</td>
+            </tr>
+            <tr>
+                <td>Monitor monthly audits and track effectiveness trends online</td>
+                <td>Easily measure and compare the performance of staff members</td>
+                <td>Advance concrete actions which continuously improve performance</td>
+                
+            </tr>
+            </tbody>
+          </table>
+          </div>
+          </br>
+        </article>
+      </section>
+
     </div>
   </div>
 </body>
