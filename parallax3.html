@@ -1,101 +1,23 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,400,900,100italic,400italic' rel='stylesheet' type='text/css'>
-    <script src="jquery.min.js"></script>
-    <script src="jquery.stellar.min.js"></script>
-    <script src="iscroll.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="skrollr.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,400,900,100italic,400italic' rel='stylesheet' type='text/css'>
+  <script src="jquery.min.js"></script>
 </head>
 <style type="text/css">
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-#top_menu {
-  background:#333;
-  top:0px;
-  height:35px;
-  width: 100%;
-  z-index:10;
-  position:fixed;
-  text-align:center;
-  padding-top:20px;
-}
-.link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-}
-#bubble { 
-  float: right;
-  top:35px;
-  left:80px;
-  font-family: 'Lato', sans-serif;
-  color:#FFF;
-  font-size:18px;
-  font-weight:400;
-  letter-spacing:1px; 
-  position: relative;
-  width: 270px;
-  height: 21px;
-  padding: 12px;
-  background: #3daeb6;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-
-#bubble:after {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 204px;
-  border-style: solid;
-  border-width: 0 11px 13px;
-  border-color: #3daeb6 transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-a, a:active, a:visited { 
-  font-family: 'Lato', sans-serif;
-  font-size:12px;
-    font-weight:400;
-    color:#edf2ee;
-  text-decoration:none;
-}
-
-
-a:hover { color: #3daeb6; }
 
 #sectionHome { 
   background: url(Cambeo-Website-BG1.png) 50% no-repeat;
   min-height: 666px; 
 }
  
-#sectionHome article { 
+#stopChase { 
   /*background: url(dark_blue_back.png);*/
-  background: linear-gradient(to right,  rgba(255,255,255,.95) 0%,rgba(42,84,102,1) 35%,rgba(42,84,102,1) 65%,rgba(255,255,255,.95) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.15) 0%,rgba(42,84,102,1) 35%,rgba(42,84,102,1) 65%,rgba(255,255,255,0.15) 100%);
   height: 185px; 
   padding-top:50px;
   position: absolute;
@@ -125,85 +47,21 @@ a:hover { color: #3daeb6; }
   text-align: center;
 }
 
-a:hover {
-color: #3daeb6;
-
-}
-#sectionLevels{ 
-  background: url(statGraphic.png) 50% no-repeat;
-  min-height: 800px;
-}
- 
-#sectionLevels article {  
-  background: linear-gradient(to right,  rgba(255,255,255,.95) 0%,rgba(42,84,102,1) 35%,rgba(42,84,102,1) 65%,rgba(255,255,255,.95) 100%);
-  position: absolute; 
-  text-align: center; 
-  top: 40px; 
+a, a:active, a:visited { 
   font-family: 'Lato', sans-serif;
-  font-weight:400;
-  font-size:36px;
-  color:#FFF;
-  z-index:1;
-  height:505px;
-  width: 100%;
+  font-size:12px;
+    font-weight:400;
+    color:#edf2ee;
+  text-decoration:none;
 }
 
 
-#sectionLevels table{
-  font-family: 'Lato', sans-serif;
-  font-weight:400;
-  font-size:18px;
-  text-align:center;
-  left: 0; right:0;top: 110;
-  margin: 0 auto;
-/*  margin-top:20px;  
-  margin-left:10%;
-  margin-right:10%;
-*/  color:#FFF; 
-  border-collapse: collapse;
-  line-height:26px;
- 
-}
+a:hover { color: #3daeb6; }
 
-#sectionLevels th {
-  border-top:none;
-  border-bottom:dotted 1px;
-  text-align:center;
-  color: white; 
-  letter-spacing:3px;
-  font-weight: 400; 
-  font-size:22px;
-}
-#sectionLevels td, th { 
-  padding: 10px 12px; 
-  border: 1px solid #ccc; 
-  text-align: left; 
-  border-bottom:none;
-  border-top:none;
-}
-
-.bannerInner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.mobile #wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.mobile #scroller {
-  height: 1700px;
-}
 
 </style>
 <body>
   <!--div data-stellar-ratio="1" data-stellar-background-ratio="1.5" data-stellar-vertical-offset="0" data-stellar-horizontal-offset="0" </div-->
-  <div id="wrapper">
-    <div id="scroller">
 
       <div id="top_menu" >
         <div id="logo"></div> 
@@ -214,57 +72,54 @@ color: #3daeb6;
         <div id="bubble">CAMBEO PRO LOGIN HERE</div>
       </div>
   
-      <section id="sectionHome" style="top: 75px; background-position-y: 0px;">
-        <article data-stellar-vertical-offset="-100" data-stellar-ratio="2">
+      <div id="stopChase" data-0="bottom:20%;" data-500="bottom:5%;">
         <div class="bannerInner">
           <span id="headline">STOP CHASING RESULTS</span></br>
           <font class="subline">AND BEGIN DRIVING THE ACTIONS THAT LEAD TO THEM</font></br>
           <a href="#Graphic" id="getButton">GET A DEMO</a>
         </div>
-        </article>
-      </section>
+      </div>
   
-      <section id="sectionLevels" data-speed="4"  data-type="background">
-        <article data-stellar-vertical-offset="-1200" data-stellar-ratio="2"></br>
-          <div class="bannerInner">IMPROVE PERFORMANCE AT EVERY LEVEL 
-          <table>
-            <thead>
-            <tr>
-                <th>EXECUTIVE</th>
-                <th>MANAGER</th>
-                <th>STAFF</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Get dashboard visibility on the effectiveness of all stores</td>
-                <td>Create and distribute store and staff assessments in minutes</td>
-                <td>Send anonylous feedback to managers and executives</td>
-            </tr>
-            <tr>
-                <td>Track performance indicators of the entire staff</td>
-                <td>Streamline daily checklists and monthly audits</td>
-                <td>Communicate critical standards of outstanding performance</td>
-            </tr>
-            <tr>
-                <td>Track implementation of company training among staff</td>
-                <td>Boost staff training with engaging videos and ready-to-go guides</td>
-                <td>Improve skills with video training proven to drive results</td>
-            </tr>
-            <tr>
-                <td>Monitor monthly audits and track effectiveness trends online</td>
-                <td>Easily measure and compare the performance of staff members</td>
-                <td>Advance concrete actions which continuously improve performance</td>
-                
-            </tr>
-            </tbody>
-          </table>
-          </div>
-          </br>
-        </article>
-      </section>
+      <div data-stellar-vertical-offset="-1200" data-stellar-ratio="2"></br>
+        <div class="bannerInner">IMPROVE PERFORMANCE AT EVERY LEVEL 
+        <table>
+          <thead>
+          <tr>
+              <th>EXECUTIVE</th>
+              <th>MANAGER</th>
+              <th>STAFF</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>Get dashboard visibility on the effectiveness of all stores</td>
+              <td>Create and distribute store and staff assessments in minutes</td>
+              <td>Send anonylous feedback to managers and executives</td>
+          </tr>
+          <tr>
+              <td>Track performance indicators of the entire staff</td>
+              <td>Streamline daily checklists and monthly audits</td>
+              <td>Communicate critical standards of outstanding performance</td>
+          </tr>
+          <tr>
+              <td>Track implementation of company training among staff</td>
+              <td>Boost staff training with engaging videos and ready-to-go guides</td>
+              <td>Improve skills with video training proven to drive results</td>
+          </tr>
+          <tr>
+              <td>Monitor monthly audits and track effectiveness trends online</td>
+              <td>Easily measure and compare the performance of staff members</td>
+              <td>Advance concrete actions which continuously improve performance</td>
+              
+          </tr>
+          </tbody>
+        </table>
+        </div>
+        </br>
+      </div>
 
-    </div>
-  </div>
   <script data-main="main" src="require.js"></script>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+  <![endif]-->
 </body>
