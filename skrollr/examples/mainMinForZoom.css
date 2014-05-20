@@ -1,0 +1,172 @@
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+	line-height: 1;
+	min-height:100%;/* so this one extends cbg3 grab area once everything is scrolled up, to the bottom, weird, and has nothing to do with zoom */
+	font-family:Artial, Verdana, sans-serif;
+}
+
+body {
+	background: #ffffff;
+	/*background-attachment:fixed;*/
+}
+
+#cbg1 {
+	z-index:50;
+	width:1008px;
+	height:551px;
+	margin-left: -504px;
+	position: absolute;
+	left: 50%;
+	/*background:url(images/bubbles.png) repeat 0 0;*/
+	background:url(images/Cambeo-Website-BG1-2.png) no-repeat 0 0;
+}
+
+#cbg2 {
+	z-index:51;
+	width:100%;
+	height:350px;
+	position: absolute;
+	background: linear-gradient(to right, rgba(255,255,255,0.15) 0%,rgba(42,84,102,.7) 35%,rgba(42,84,102,.7) 65%,rgba(255,255,255,0.15) 100%);
+	background-repeat: no-repeat;
+}
+
+#cbg3 {
+	z-index:49;
+	width:1440px;
+	height:800px;
+	margin-left:-720px;
+	left: 50%;
+	position: absolute;
+	background:url(images/statGraphic.png) no-repeat 0 0;
+}
+
+#intro {
+	width:80%;
+	left:50%;
+	top:1em;
+	margin-left:-40%;
+	padding:2em;
+	background:#fff;
+	text-align:center;
+	border-radius:1em;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#intro .arrows {
+	font-size:2em;
+	color:#09f;
+}
+
+#transform {
+	width:70%;
+	left:50%;
+	top:20%;
+	margin-left:-35%;
+	text-align:center;
+	font-size:150%;
+
+	.transform-origin(50%, 50%);
+}
+
+#properties {
+	width:100%;
+	height:100%;
+	padding-top:10%;
+	text-align:center;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#easing_wrapper {
+	width:100%;
+	height:100%;
+}
+
+#easing {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+.drop {
+	background:#09f;
+	font-weight:bold;
+	padding:1em;
+}
+
+#download {
+	width:80%;
+	left:10%;
+	height:80%;
+	padding:3em;
+	border:0 solid #222;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.twitter-share-button, .twitter-follow-button {
+	vertical-align:middle;
+}
+
+.bannerInner {
+  color:#FFF;
+  font-family: 'Lato', sans-serif;
+  font-size:80px;
+  font-weight:300;
+  line-height:45px;
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: 666px; 
+  text-align: center; 
+  top: 270px; 
+  width: 100%;
+}
+
+#headline { 
+  font-size:60px;
+  font-weight:400;
+  line-height:45px;
+}
+
+.subline {
+  font-size:28px;
+  font-weight:400;
+  line-height:28px;
+}
+
+a, a:active, a:visited { 
+  font-family: 'Lato', sans-serif;
+  font-size:12px;
+    font-weight:400;
+    color:#edf2ee;
+  text-decoration:none;
+}
+
+
+a:hover { color: #3daeb6; }
