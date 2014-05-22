@@ -20,18 +20,35 @@ html, body {
 
 body {
 	background: #ffffff;
-	/*background-attachment:fixed;*/
 }
 
-#cbgWrap {
-/*	background: url('images/cambeo c small alpha gray.png') 0 50%;
-*/}
+#cbg4 {
+  background-image: url(images/iOS_fiber_Texture_by_reddevilsX.png);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: .6;
+}
+
+#cbg5 {
+  width: 100%;
+  height: 100%;
+  z-index:  -1;
+}
+
+#cbg6 {
+  background-image: url(images/white_wall2_@2X.jpg);
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index:  -3;
+}
 
 #cbgNav {
 	height: 50px;
 	width: 100%;
 	background-color: rgba(33,33,33,.7);
-	/*z-index: 100;*/
+	z-index: 100;
 }
 
 /*
@@ -45,6 +62,17 @@ body {
 }
 */
 
+#logo { 
+  background: url(images/logo_square.png) no-repeat;
+  height: 120px;
+  width: 120px;
+  left: 0; right:0;
+  margin: auto;
+  position:fixed;	
+  z-index:11;
+  top:0px;
+}
+
 #logoSmall {
 	float 			: left;
   background 	: url('images/logo_wt_sm.png') no-repeat 50% 0%; 
@@ -53,7 +81,8 @@ body {
   left 				: 40px;
   z-index 		: 60;
   top 				: 12px;
-  margin 			: 10px;
+  margin-top	: -1px;
+  margin-left	: -5px;
 }
 
 #logoSmall:hover {
@@ -115,6 +144,24 @@ body {
 	height:250px;
 	position: absolute;
 	background: linear-gradient(to right, rgba(255,255,255,0.15) 0%,rgba(42,84,102,.7) 35%,rgba(42,84,102,.7) 65%,rgba(255,255,255,0.15) 100%);
+	background-repeat: no-repeat;
+}
+
+#cbg7 {
+	z-index:51;
+	width:100%;
+	height:480px;
+	position: absolute;
+	background: linear-gradient(to right, rgba(255,255,255,0.15) 0%,rgba(42,84,102,.7) 35%,rgba(42,84,102,.7) 65%,rgba(255,255,255,0.15) 100%);
+	background-repeat: no-repeat;
+}
+
+#cbg8 {
+	z-index:51;
+	width:100%;
+	height:250px;
+	position: absolute;
+	background: linear-gradient(to right, rgba(255,255,255,0.15) 0%,rgba(42,84,102,.7) 35%,rgba(42,84,102,.7) 65%,rgba(255,255,255,0.15) 100%), url(images/hexellence_@2X.png);
 	background-repeat: no-repeat;
 }
 
@@ -253,6 +300,98 @@ width: 100%;}
 	width: 100%;
 }
 
+#bannerInner2 { 
+  background:  url(dark_blue_texture.png) 50% 0 repeat fixed; 
+  min-height: 500px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  z-index:3;
+
+
+	color: #FFF;
+	font-family: 'Lato', sans-serif;
+	font-size: 80px;
+	line-height: 45px;
+	text-align: center;
+	width: 100%;
+	z-index: 53;
+	font-weight: 100;
+}
+ 
+#centerBanner2 {  
+  position: absolute; 
+  text-align: center; 
+  top: 40px; 
+  width: 100%; 
+  color:#FFF;
+  font-style:strong;
+  z-index:4;
+
+
+	text-align: justify;
+	height:800px;
+	position: absolute;
+}
+
+
+#centerBanner2 p {
+	text-align-after: justify;
+}
+
+#centerBanner2 p:after
+{content: "";
+display: inline-block;
+width: 100%;}
+
+#improvePerformance {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size:44px;
+  width:900px;
+	position: absolute;
+	margin-left:-450px;
+	left: 50%;
+}
+
+#bannerInner2 table{
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size:18px;
+  text-align:center;
+  left: 0; right:0;top: 110;
+  margin-left:10%;
+  margin-right:10%;
+  color:#FFF; 
+  border-collapse: collapse;
+  line-height:26px;
+ 
+	width:1300px;
+	position: absolute;
+	margin-left:-650px;
+	left: 50%;
+	top: 70px;
+}
+
+#bannerInner2 th {
+  border-top:none;
+  border-bottom:dotted 1px;
+  text-align:center;
+  color: white; 
+  letter-spacing:3px;
+  font-weight: 400; 
+  font-size:22px;
+}
+#bannerInner2 td, th { 
+  padding: 10px 12px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  border-bottom:none;
+  border-top:none;
+}
+
+
 a, a:active, a:visited { 
   font-family: 'Lato', sans-serif;
   font-size:12px;
@@ -266,9 +405,9 @@ a:hover { color: #3daeb6; }
 
 #getButton{	
   border:#fff 2px solid;
-  height:20px;
+  height:11px;
   padding:10px 15px;
-  width:88px;
+  width:133px;
   font-family: 'Lato', sans-serif;
   font-size:20px;
   font-weight:400;
@@ -288,8 +427,16 @@ a:hover { color: #3daeb6; }
   transition: color .5s ease-out;
   text-decoration:none;
 
-	margin-left:-44px;
+	margin-left:-74px;
 	left: 50%;
 	position: absolute;
 	top: 175px;
+}
+
+#getButton:active, #getButton:hover{
+    color:#38d1ca;
+	border:#38d1ca 2px solid;
+	font-family: 'Lato', sans-serif;
+    font-size:20px;
+    font-weight:400;
 }
