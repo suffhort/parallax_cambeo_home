@@ -1,27 +1,26 @@
-body {font:12px/1.4 Verdana,Arial;}
+/*body {font:12px/1.4 Verdana,Arial;}
 h1 {font:30px 'Trebuchet MS',Verdana; margin:0}
 h2 {font-size:12px; font-weight:normal; margin:0 0 20px}
 ul {margin:0; padding-left:20px}
 
-.thumbcont  {
-position: absolute;
-left: 50%;
-width: 149px;
-margin-left: -91px;
+*/.thumbcont  {
 border-radius: 5px;
-behavior: url(border-radius.htc);
+/*behavior: url(border-radius.htc);*/
 margin-top: 12px;
+display: inline-block;
+width: 100px;
+height: 100px;
 }
 .thumbcont img{
 cursor:pointer;
 }
 .cropframe{
     border-radius: 5px 5px 5px 5px;
-    border: 1px solid white;
-    behavior:url(border-radius.htc);
-    height: 71px;
+    border: 1px solid black;
+    /*behavior:url(border-radius.htc);*/
+    height: 348px;
     overflow: hidden;
-    width: 154px;
+    width: 616px;
     margin-left:12px;
 }
 .margframe{
