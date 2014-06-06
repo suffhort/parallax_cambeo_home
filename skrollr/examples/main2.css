@@ -222,8 +222,8 @@ top: 0px;
 
 #cbg3-2 {
   z-index:49;
-  width:1440px;
-  height:800px;
+  width:511px;
+  height:703px;
   margin-left:-720px;
   left: 50%;
   position: absolute;
@@ -242,8 +242,8 @@ top: 0px;
 
 #cbg3-4 {
   z-index:49;
-  width:1440px;
-  height:800px;
+  width:857px;
+  height:396px;
   margin-left:-720px;
   left: 50%;
   position: absolute;
@@ -254,7 +254,7 @@ top: 0px;
 #cbg3-5 {
   z-index:49;
   width:757px;
-  height:800px;
+  height:276px;
   position: absolute;
   background:url(images/videoAssignmentResults.png) no-repeat 0 0;
   left: 5%;
@@ -271,7 +271,7 @@ top: 0px;
 #cbg3-7 {
   z-index:49;
   width:849px;
-  height:800px;
+  height:396px;
   position: absolute;
   background:url(images/averageQuestionByCategory.png) no-repeat 0 0;
   left: 30%;
