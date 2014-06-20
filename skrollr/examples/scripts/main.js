@@ -15,6 +15,6 @@ require(['skrollr'], function(skrollr){
 				return 1-p;
 			}
 		},
-		smoothScrollingDuration: 1000
+		smoothScrollingDuration: 1500
 	});
 });
