@@ -75,9 +75,10 @@ $(window).scroll(function () {
 
 //Login Call Out 
 $(document).ready(function(){
-$("#bubble").hide().delay( 3100 );					   
-$("#bubble").slideDown( 300 ).delay( 9999 );
-$("#bubble").fadeOut().delay(1);	
+$("#bubble").show().delay( 0);
+$("#bubble").hide().delay( 3100 );
+$("#bubble").slideDown( 300 ).delay( 9000 );
+$("#bubble").fadeOut().delay(1);
 })
 
 // Animated Boxes

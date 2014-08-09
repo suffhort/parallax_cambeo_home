@@ -1,19 +1,25 @@
-<link href="style/style-forms.css" type="text/css" rel="stylesheet"  />   
-<div id="emailresponse" style="margin:50px 0 0 50px; width:400px;">
+<link href="style/main2.css" rel="stylesheet" type="text/css" />
+<link href="style/style-forms.css" type="text/css" rel="stylesheet"  />
+<link href="http://fonts.googleapis.com/css?family=Lato:100,400,900,100italic,400italic" rel="stylesheet" type="text/css">
+<div id="emailresponse">
+    <a href="http://www.cambeogroup.com"><div id="logo" 
+        data-0="background-position[sqrt]: 0px 0px; opacity[sqrt]: 1; z-index:500; display: inline;" 
+        data-200="opacity:0; z-index:-500; display: none; background-position: 0px -100px;"></div></a>
 <?php
 if(isset($_POST['email'])) {
      
     // CHANGE THE TWO LINES BELOW
-  $email_to = "ben.horton@cambeogroup.com, hunter@cambeogroup.com, vaughn@cambeogroup.com, lloyd.weffer@cambeogroup.com, trevor@cambeogroup.com";
+  //$email_to = "ben.horton@cambeogroup.com";
+   $email_to = "ben.horton@cambeogroup.com, hunter@cambeogroup.com, vaughn@cambeogroup.com, lloyd.weffer@cambeogroup.com, trevor@cambeogroup.com";
 
   $email_subject = "Executive Demonstration Request";
      
      
   function died($error) {
       // your error code can go here
-      echo "<h2>An error occurred.</h2>";
-      echo $error."<br /><br />";
-      echo "<h1>Please navigate your browser back.<br /><br /></h1>";
+      echo "<h2>An error occurred:</h2>";
+      echo $error;
+      echo "<h1>Please navigate your browser back.</h1>";
       die();
   }
    
@@ -27,9 +33,7 @@ if(isset($_POST['email'])) {
   //     !isset($_POST['comments'])) {
   //     died('<h3>Looks like you made some errors in the form.</h3>');       
   // }
-  if (!isset($_POST['name']) ||
-      !isset($_POST['company']) ||
-      !isset($_POST['email'])) {
+  if (!isset($_POST['name'], $_POST['company'], $_POST['email'])) {
       died('<h3>Please fill in all fields.</h3>');       
   }
   
@@ -53,6 +57,10 @@ if(isset($_POST['email'])) {
   if(!preg_match($string_exp,$name)) {
     $error_message .= '<h3>The format of your name does not appear to be valid.<br /></h3>';
   }
+    $comp_exp = "/^[A-Za-z .'-]+$/";
+  if(!preg_match($comp_exp,$company)) {
+    $error_message .= '<h3>The format of your company name does not appear to be valid.<br /></h3>';
+  }
   if(strlen($error_message) > 0) {
     died($error_message);
   }
@@ -74,9 +82,10 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
-Your request for a CAMBEO PRO Executive Demo has been successfully submitted!
-</div>
+<p>Your request for a</p><p>CAMBEO PRO Executive Demo</p><p>has been successfully submitted!</p>
 
+</div>
+  
 <?php
 }
 die();

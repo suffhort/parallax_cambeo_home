@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.25, minimum-scale=.25, maximum-scale=.25">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=.25, minimum-scale=.25, maximum-scale=10,  user-scalable=yes"> -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<title>CAMBEO GROUP</title>
+
+	  <script src="scripts/jquery-1.6.1.min.js"></script>
+		<link href="style/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/skrollr.min.js"></script>
+    <script src="scripts/skrollr.menu.min.js"></script>
+
+	</head>
+	<style>
+	#mynav {width:1500px;height: 320px;display: inline;}
+	.menu div{display:inline-block;}
+	.menud {width:100px;height: 100px;}
+	#red  {background-color: darkred  ;}
+	#grn  {background-color: darkgreen;}
+	#blu  {background-color: darkblue ;}
+	#cred {background-color: red      ;}
+	#cgrn {background-color: green    ;}
+	#cblu {background-color: blue     ;}
+	.contPiece {width:100px; height:500px;}
+	</style>
+<body style="height: 3000px;">
+<div id="skrollr-body">
+  <div class="menu" id="mynav" data-0:"top:0;" data-500:"top:0;">
+		<div class="menud"><a href="#red"   data-menu-top="100"><div class="menud" id="red" >d1</div></a></div>
+		<div class="menud"><a href="#green" data-menu-top="200"><div class="menud" id="grn" >d2</div></a></div>
+		<div class="menud"><a href="#blue"  data-menu-top="300"><div class="menud" id="blu" >d3</div></a></div>
+	</div>
+	<div class="contPiece" id="cred" style="background-color:red;  " data-menu-offset="40" data-0:"top:100px;" data-100:"top:400px;"></div>
+	<div class="contPiece" id="cgrn" style="background-color:green;" data-menu-offset="50" data-0:"top:300px;" data-300:"top:700px;"></div>
+	<div class="contPiece" id="cblu" style="background-color:blue; " data-menu-offset="70" data-0:"top:500px;" data-600:"top:900px;"></div>
+</div> 
+</body>
+    <!--script>
+      var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+          WTF: Math.random,
+          inverted: function(p) {
+            return 1-p;
+          }
+        },
+        smoothScrollingDuration: 1500
+      });
+
+      skrollr.menu.init(s, {
+          //skrollr will smoothly animate to the new position using `animateTo`.
+          animate: true,
+
+          //The easing function to use.
+          easing: 'sqrt',
+
+          //Multiply your data-[offset] values so they match those set in skrollr.init
+          scale: 2,
+
+          //How long the animation should take in ms.
+          duration: function(currentTop, targetTop) {
+              //By default, the duration is hardcoded at 500ms.
+              return 1500;
+
+              //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+              //return Math.abs(currentTop - targetTop) * 10;
+          }
+
+          //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+          //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+          // handleLink: function(link) {
+          //     return 1400;//Hardcoding 400 doesn't make much sense.
+          // }
+      });
+
+    </script-->
+<script>
+        //Init Skrollr
+    $(document).ready(function() {
+        var s = skrollr.init({
+            //forceHeight: false,
+            smoothScrolling: true,
+            smoothScrollingDuration: 1500
+        });
+
+        skrollr.menu.init(s, {
+            easing: 'outCubic',
+            animate: true,
+            duration: 1000
+        });
+    });
+</script>
+
+
+</html>

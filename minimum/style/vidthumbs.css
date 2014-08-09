@@ -6,7 +6,7 @@ ul {margin:0; padding-left:20px}
 */.thumbcont  {
 border-radius: 5px;
 /*behavior: url(border-radius.htc);*/
-margin-top: 12px;
+margin-top: 87px;
 display: inline-block;
 width: 100px;
 height: 100px;
@@ -15,13 +15,13 @@ height: 100px;
 cursor:pointer;
 }
 .cropframe{
-    border-radius: 5px 5px 5px 5px;
-    border: 1px solid black;
-    /*behavior:url(border-radius.htc);*/
-    height: 348px;
-    overflow: hidden;
-    width: 616px;
-    margin-left:12px;
+border-radius: 5px 5px 5px 5px;
+border: 1px solid black;
+/* behavior: url(border-radius.htc); */
+height: 492px;
+overflow: hidden;
+width: 896px;
+margin-left: 12px;
 }
 .margframe{
     margin:-9px 0px 0px 0px;

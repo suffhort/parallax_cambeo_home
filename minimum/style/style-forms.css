@@ -11,12 +11,15 @@ html, body {
 			background-position-y: initial;
 			background-origin: initial;
 			background-clip: initial;
-			background-color: #edf2ee;
+			background-color: rgba(38,47,44,1);
 			width: 100%;
 			height: 100%;
             padding:0px;
 			margin:0px;
 			margin-top:0px;
+			font-family: 'lato',arial,helvitica, sans-serif;
+			font-size: 30px;
+			color: rgba(240,246,240,1) ;
        	}
 		
 		/*Color Pallete
@@ -527,9 +530,9 @@ html, body {
 		h1 {
 			font-family: freight-sans-pro,sans-serif;
 			font-size:42px;
-			font-weight:400;
-			line-height:26px;
-			color:#1B5466;
+			font-weight:100;
+			line-height:40px;
+			/*color:#1B5466;*/
 		}
 		
 		h2{
@@ -537,20 +540,20 @@ html, body {
 			font-size:18pt;
 			font-weight:500;
 			line-height:22px;
-			border-top:#3DAEB6 solid medium;
+			/*border-top:#3DAEB6 solid medium;*/
 			padding-top:5px;
-			color:#1B5466;
+			/*color:#1B5466;*/
 			
 		}
 		
 		
 		h3{
-			color:#293531;
+			/*color:#293531;*/
 			text-align:left;
-			font-family: freight-sans-pro,sans-serif;
-			font-size:14px;
+			font-family: 'lato',arial,helvitica,freight-sans-pro,sans-serif;
+			font-size:30px;
 			font-weight:100;
-			line-height:20px;
+			line-height:30px;
 		}
 		
 		
@@ -559,7 +562,7 @@ html, body {
 			font-size:24pt;
 			font-weight:500;
 			line-height:5px;
-			color:#3DAEB6;
+			/*color:#3DAEB6;*/
 			margin:20px 0 20px;
 		}
 		
@@ -567,7 +570,7 @@ html, body {
 			font-family: freight-sans-pro,sans-serif;
 			font-size:9pt;
 			font-weight:300;
-			color:#1B5466;
+			/*color:#1B5466;*/
 			
 		}
 		
@@ -667,3 +670,19 @@ padding:0;
      @charset "UTF-8";
 /* CSS Document */
 
+#emailresponse {
+font-weight: 100;
+border-top: 1px solid rgba(240,246,240,1);
+border-bottom: 1px solid rgba(240,246,240,1);
+line-height: 44px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 50px;
+padding-left: 50px;
+width: 440px;
+left: 50%;
+position: absolute;
+margin-left: -264px;
+margin-top: 160px;
+text-align: center;
+}
